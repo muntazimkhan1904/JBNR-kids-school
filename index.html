@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JBNR Kids School | Learn • Play • Grow</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #fdfdfd;
+      scroll-behavior: smooth;
+    }
+    /* Navbar */
+    .navbar-brand span {
+      font-weight: 700;
+      color: #ff7a59;
+    }
+    .navbar {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    /* Hero */
+    #hero {
+      min-height: 80vh;
+      background: linear-gradient(135deg, #fff8e1, #e3f2fd);
+      display: flex;
+      align-items: center;
+      padding-top: 80px;
+    }
+    .hero-title {
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: #333;
+    }
+    .hero-tagline {
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #ff7a59;
+      font-weight: 600;
+    }
+    .btn-primary-custom {
+      background-color: #ff7a59;
+      border-color: #ff7a59;
+    }
+    .btn-primary-custom:hover {
+      background-color: #ff5c33;
+      border-color: #ff5c33;
+    }
+
+    /* Section spacing */
+    section {
+      padding: 60px 0;
+    }
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .section-subtitle {
+      color: #777;
+      font-size: 0.95rem;
+      margin-bottom: 32px;
+    }
+
+    /* Cards */
+    .feature-card,
+    .class-card {
+      border: none;
+      border-radius: 16px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+    }
+    .icon-circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff3e0;
+      color: #ff7a59;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    /* Gallery */
+    .gallery-img {
+      border-radius: 12px;
+      object-fit: cover;
+      height: 200px;
+      width: 100%;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #263238;
+      color: #eceff1;
+      padding: 30px 0 15px;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #ffcc80;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Small helper styles */
+    .badge-pill {
+      border-radius: 50rem;
+      padding: 0.45rem 0.9rem;
+      font-size: 0.8rem;
+    }
+    .logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+.logo img{
+width:70px;height:60px;
+background:#fff;
+border-radius:50%;
+padding:5px;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#hero">
+        <div class="logo">
+        <img src="C:\Users\Admin\Downloads\Logo JBNR.png">
+        </div>
+        <div class="me-2">
+          <span>JBNR Kids</span>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#classes">Classes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#admissions">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-sm btn-primary-custom text-white" href="#admissions">Admissions Open</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br>
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-6">
+          <div class="hero-tagline">Learn • Play • Grow</div>
+          <h1 class="hero-title mt-2">Welcome to JBNR Kids School</h1>
+          <p class="mt-3">
+            JBNR Kids School is a <strong>child-centric</strong> educational institution offering quality education from Play Group to Class 5, focusing on holistic development, activity-based learning, and strong moral values.
+          </p>
+          <div class="mt-4 d-flex flex-wrap gap-2">
+            <a href="#admissions" class="btn btn-primary-custom btn-lg text-white">Enquire Now</a>
+            <a href="#classes" class="btn btn-outline-secondary btn-lg">View Classes</a>
+          </div>
+          <div class="mt-3 d-flex flex-wrap gap-2">
+            <span class="badge bg-warning text-dark badge-pill">Admissions Open</span>
+            <span class="badge bg-info text-dark badge-pill">Play School to Class 5</span>
+            <span class="badge bg-success text-light badge-pill">Station Road, Marjadwa</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Temporary hero image -->
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzGQ5FIT6-jbucwg1kvrHbsn_kYw9JLfRBgw&s" alt="JBNR Kids School" class="img-fluid rounded-4 shadow-sm " width="100%" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="section-title">About JBNR Kids School</h2>
+        <p class="section-subtitle">A caring, safe, and joyful learning space for young children.</p>
+      </div>
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-6">
+          <p>
+            JBNR Kids School is a caring and supportive learning space for children from 2.5 to 11 years, providing a joyful environment where children learn through play, exploration, and meaningful activities guided by experienced and nurturing teachers.
+          </p>
+          <p>
+            The school focuses on holistic development—academic, emotional, social, and physical—so that every child grows with confidence, curiosity, and strong values.
+          </p>
+          <div class="row mt-3 g-3">
+            <div class="col-md-6">
+              <div class="feature-card card p-3 h-100">
+                <div class="icon-circle">
+                  <span>🎓</span>
+                </div>
+                <h6 class="mb-1">Holistic Learning</h6>
+                <p class="mb-0">Activity-based classrooms that encourage thinking, creativity, and collaboration.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-card card p-3 h-100">
+                <div class="icon-circle">
+                  <span>🛡️</span>
+                </div>
+                <h6 class="mb-1">Safe Environment</h6>
+                <p class="mb-0">Safe and child-friendly classrooms where students feel happy and secure.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <!-- Placeholder about image -->
+          <img src="https://images.indianexpress.com/2017/11/library-1_759.jpg?w=414" alt="Kids learning" class="img-fluid rounded-4 shadow-sm" width="100%" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Classes -->
+  <section id="classes" style="background-color:#fffaf3;">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="section-title">Classes & Age Groups</h2>
+        <p class="section-subtitle">From first steps in Play Group to strong foundations in Class 5.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="class-card card h-100 p-3">
+            <h5>Play Group</h5>
+            <span class="text-muted">2.5 – 3.5 years</span>
+            <p class="mt-2 mb-0">Settling, social skills, rhymes, free play, and fine motor activities in a fun environment.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="class-card card h-100 p-3">
+            <h5>Nursery</h5>
+            <span class="text-muted">3.5 – 4.5 years</span>
+            <p class="mt-2 mb-0">Early pre-writing skills, colors, shapes, stories, and group activities for confident learners.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="class-card card h-100 p-3">
+            <h5>LKG</h5>
+            <span class="text-muted">4.5 – 5.5 years</span>
+            <p class="mt-2 mb-0">Pre-literacy and numeracy, phonics, simple counting, and creative classroom work.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="class-card card h-100 p-3">
+            <h5>UKG</h5>
+            <span class="text-muted">5.5 – 6.5 years</span>
+            <p class="mt-2 mb-0">Reading readiness, basic arithmetic, projects, and confidence-building activities.</p>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="class-card card h-100 p-3">
+            <h5>Class 1 – 5</h5>
+            <span class="text-muted">6 – 11 years</span>
+            <p class="mt-2 mb-1">Strong foundation in core subjects with computer basics and communication skills.</p>
+            <p class="mb-0">Focus on discipline, values, personality development, and real-life learning experiences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities & Facilities -->
+  <section id="activities">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="section-title">Activities & Facilities</h2>
+        <p class="section-subtitle">Engaging activities that build skills, values, and confidence.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card card h-100 p-3">
+            <div class="icon-circle"><span>📚</span></div>
+            <h6>Activity-based Learning</h6>
+            <p class="mb-0">Hands-on activities that make concepts easy, fun, and memorable for children.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card card h-100 p-3">
+            <div class="icon-circle"><span>💻</span></div>
+            <h6>Computer & AI Basics</h6>
+            <p class="mb-0">Simple computer basics and age-appropriate AI introduction through stories and games.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card card h-100 p-3">
+            <div class="icon-circle"><span>🎨</span></div>
+            <h6>Arts & Expression</h6>
+            <p class="mb-0">Drawing, colouring, storytelling, poetry, dance, and music activities for creativity.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card card h-100 p-3">
+            <div class="icon-circle"><span>⚽</span></div>
+            <h6>Games & Values</h6>
+            <p class="mb-0">Indoor and outdoor games with a strong focus on discipline, values, and personality development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admissions -->
+  <section id="admissions" style="background-color:#e3f2fd;">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="section-title">Admissions Open</h2>
+        <p class="section-subtitle">Play School to Class 5 • Limited seats available.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h5>How to Apply</h5>
+          <ol class="mt-2">
+            <li>Call or WhatsApp <strong>9110102730</strong> to book a school visit.</li>
+            <li>Visit the school at Station Road, Marjadwa and meet the admission counsellor.</li>
+            <li>Fill the admission form and submit required documents at the school office.</li>
+            <li>Confirm admission by paying the applicable admission fee.</li>
+          </ol>
+          <p class="mt-3 mb-0">
+            For any questions about age criteria, syllabus, or transport, parents can contact the school office on call or WhatsApp.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <h5>Admission Enquiry Form</h5>
+          <form id="admissionForm" class="mt-2">
+            <div class="row g-2">
+              <div class="col-md-6">
+                <label class="form-label">Child's Name</label>
+                <input type="text" class="form-control" id="childName" required />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" required />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Class Applying For</label>
+                <select class="form-select" id="classFor" required>
+                  <option value="">Select Class</option>
+                  <option>Play Group</option>
+                  <option>Nursery</option>
+                  <option>LKG</option>
+                  <option>UKG</option>
+                  <option>Class 1</option>
+                  <option>Class 2</option>
+                  <option>Class 3</option>
+                  <option>Class 4</option>
+                  <option>Class 5</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Parent's Name</label>
+                <input type="text" class="form-control" id="parentName" required />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Mobile Number</label>
+                <input type="tel" class="form-control" id="mobile" required />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">WhatsApp Number (optional)</label>
+                <input type="tel" class="form-control" id="whatsapp" />
+              </div>
+              <div class="col-12">
+                <label class="form-label">Message / Questions</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary-custom text-white mt-3">Submit Enquiry</button>
+            <div class="mt-2 small text-muted">Note: Online form demo only. Final submission process can be connected to email or WhatsApp.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="section-title">School Gallery</h2>
+        <p class="section-subtitle">Sample photos for demo. Replace with real school images later.</p>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-6">
+          <img src="https://www.teachhub.com/wp-content/uploads/2020/05/Classroom-Management-for-an-Effective-Learning-Environment-scaled.jpg" alt="Classroom" class="gallery-img" />
+        </div>
+        <div class="col-md-3 col-6">
+          <img src="https://unicorn-s3.b-cdn.net/Screenshot-2024-10-19-6.10.39-PM-zpru1.png" alt="Activities" class="gallery-img" />
+        </div>
+        <div class="col-md-3 col-6">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ41atK1uWbZbgX_XGMGBQupzkh-rIn-9cjA&s" alt="Building" class="gallery-img" />
+        </div>
+        <div class="col-md-3 col-6">
+          <img src="https://d3bat55ebwjhsf.cloudfront.net/schools/2025-05-28_15-36-04/ctlv/infra/images/infra127.jpg" alt="Play Area" class="gallery-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" style="background-color:#f5f5f5;">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">We are happy to answer all your queries.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h5>JBNR Kids School</h5>
+          <p class="mb-1"><strong>Address:</strong> Station Road, Marjadwa</p>
+          <p class="mb-1"><strong>Phone:</strong> 9110102730</p>
+          <p class="mb-1"><strong>WhatsApp:</strong> 9110102730</p>
+          <p class="mb-1"><strong>Email:</strong> To be added</p>
+          <p class="mt-3 mb-0">
+            Parents can call or message on WhatsApp during school hours for admission details, fee structure, and visit timings.
+          </p>
+        </div>
+        <div class="col-lg-7">
+          <div class="ratio ratio-16x9 rounded-4 overflow-hidden">
+            <!-- Replace src with actual Google Map iframe once link is available -->
+            <iframe 
+  src="https://www.google.com/maps/place/27%C2%B002'33.9%22N+84%C2%B036'26.4%22E/@27.042737,84.607336,17z/data=!3m1!4b1!4m4!3m3!8m2!3d27.042737!4d84.607336?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
+  width="100%"
+  height="300"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row align-items-center gy-2">
+        <div class="col-md-6">
+          © <span id="yearSpan"></span> JBNR Kids School. All rights reserved.
+        </div>
+        <div class="col-md-6 text-md-end">
+          Learn • Play • Grow
+        </div>
+        
+    </div>
+    <div class="text-center mt-3">Design and Developed By <a href="https://skylineitsolutions.com/">Skyline IT Solutions</a></div>
+  </footer>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/917249660197?text=Namaste%2C%20mujhe%20JBNR%20Kids%20School%20admission%20ke%20baare%20mein%20jankari%20chahiye."
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+       alt="WhatsApp"
+       class="whatsapp-icon">
+</a>
+<style>
+    .whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+}
+.whatsapp-icon {
+  width: 32px;
+  height: 32px;
+}
+
+</style>
+  <!-- Bootstrap JS + Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Simple JS -->
+  <script>
+    // Set current year in footer
+    document.getElementById("yearSpan").textContent = new Date().getFullYear();
+
+    // Demo form behavior (prevent real submit)
+    const admissionForm = document.getElementById("admissionForm");
+    admissionForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thank you for your enquiry! The school will contact you soon.");
+      admissionForm.reset();
+    });
+  </script>
+</body>
+</html>
